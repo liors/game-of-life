@@ -2,6 +2,7 @@
   "name": "game-of-life",
   "scripts": {
     "start": "webpack-dev-server --inline --content-base . --port 8090",
+    "build": "webpack",
     "test": "standard"
   },
   "version": "0.0.1",
