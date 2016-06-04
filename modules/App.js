@@ -23,7 +23,6 @@ export default class App extends React.Component {
   }
 
   getRows () {
-    console.log(`Repainting w/ x: ${this.state.x} and y: ${this.state.y}`)
     let rows = []
     _.times(size, (i) => {
       const hit = {
@@ -41,7 +40,6 @@ export default class App extends React.Component {
       x: x,
       y: y
     })
-    console.log(`clicked at x: ${x} y: ${y}`)
   }
 
   render () {
