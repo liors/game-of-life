@@ -1,0 +1,73 @@
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #555;
+    font: 14px He;
+    margin: 6px;
+
+    background-color: white;
+    line-height: 90px;
+    color: #424242;
+    font-size: 2em;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: background-color 0.7s ease-out;
+    flex-direction: row;
+}
+
+.cell:hover {
+    cursor: pointer;
+}
+
+.cell.purple {
+    background-color: purple;
+}
+
+.cell.aliceblue {
+    background-color: aliceblue;
+}
+
+.cell.bisque {
+    background-color: bisque;
+}
+
+.cell.rebeccapurple {
+    background-color: rebeccapurple;
+}
+
+.cell.teal {
+    background-color: teal;
+}
+
+.cell.gainsboro {
+    background-color: gainsboro;
+}
+
+.cell.aquamarine {
+    background-color: aquamarine;
+}
+
+.cell.navy {
+    background-color: navy;
+}
+
+.cell.red {
+    background-color: red;
+}
+
+.cell.royalblue {
+    background-color: royalblue;
+}
+
+.cell .orange {
+    background-color: #FF8A65;
+}
+
+.cell .gray {
+    background-color: #90A4AE;
+}
+
+.cell .gray-light {
+    background-color: #CFD8DC;
+}
+
