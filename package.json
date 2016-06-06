@@ -1,6 +1,10 @@
 {
   "name": "game-of-life",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:liors/game-of-life.git"
+  },
   "scripts": {
     "start": "webpack-dev-server --inline --content-base . --port 8090",
     "build": "webpack",
