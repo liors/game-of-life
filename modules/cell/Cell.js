@@ -12,20 +12,17 @@ export default class Cell extends React.Component {
   }
 
   isAlive () {
-    if (this.props.hit.x === this.props.x && this.props.hit.y === this.props.y) {
-      const index = _.first(_.shuffle(_.range(0, _.size(colors) - 1)))
+    if (_.includes(this.props.hit.x, this.props.x) && _.includes(this.props.hit.y, this.props.y)) {
+      const index = _.last(_.shuffle(_.range(0, _.size(colors))))
+      console.log(`chosen color ${colors[index]}`)
       return 'cell ' + colors[index]
     }
     return 'cell'
   }
 
-  onClick () {
-    this.props.bam(this.props.x, this.props.y)
-  }
-
   render () {
     return (
-      <div onClick={() => this.onClick()} className={this.isAlive()}></div>
+      <div className={this.isAlive()}></div>
     )
   }
 }

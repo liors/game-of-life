@@ -3,23 +3,16 @@ import Row from './row/Row'
 import _ from 'lodash'
 import './app.scss'
 
-const size = 12
+const size = 6
+const lifeSize = size*size/4;
 
 export default class App extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      x: 0,
-      y: 0
+      x: [0, 2, 4],
+      y: [1, 3, 5]
     }
-    setInterval(() => {
-      const x = _.first(_.shuffle(_.range(0, size)))
-      const y = _.first(_.shuffle(_.range(0, size)))
-      this.setState({
-        x: x,
-        y: y
-      })
-    }, 600)
   }
 
   getRows () {
@@ -29,17 +22,10 @@ export default class App extends React.Component {
         x: this.state.x,
         y: this.state.y
       }
-      rows.push(<Row bam={this.bam.bind(this)} hit={hit} index={i} cells={size} key={i} />)
+      rows.push(<Row hit={hit} index={i} cells={size} key={i} />)
     })
 
     return rows
-  }
-
-  bam (x, y) {
-    this.setState({
-      x: x,
-      y: y
-    })
   }
 
   render () {

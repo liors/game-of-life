@@ -15,10 +15,6 @@
     flex-direction: row;
 }
 
-.cell:hover {
-    cursor: pointer;
-}
-
 .cell.purple {
     background-color: purple;
 }
@@ -59,15 +55,15 @@
     background-color: royalblue;
 }
 
-.cell .orange {
+.cell.orange {
     background-color: #FF8A65;
 }
 
-.cell .gray {
+.cell.gray {
     background-color: #90A4AE;
 }
 
-.cell .gray-light {
+.cell.gray-light {
     background-color: #CFD8DC;
 }
 
