@@ -1,5 +1,5 @@
 
-# game of life
+# game of life in react.js
 
 ## Site
 http://liors.github.io/game-of-life/
