@@ -12,9 +12,8 @@ export default class Cell extends React.Component {
   }
 
   isAlive () {
-    if (_.includes(this.props.hit.x, this.props.x) && _.includes(this.props.hit.y, this.props.y)) {
+    if (this.props.alive) {
       const index = _.last(_.shuffle(_.range(0, _.size(colors))))
-      console.log(`chosen color ${colors[index]}`)
       return 'cell ' + colors[index]
     }
     return 'cell'
